@@ -24,6 +24,13 @@ class ViewController: UIViewController {
         questionLabel.text = questions[currentQuestionIndex]
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Set the label's intial alpha
+        questionLabel.alpha = 0
+    }
+    
     // Action method to show the next question
     @IBAction func showNextQuestion(_ sender: UIButton) {
         currentQuestionIndex += 1
