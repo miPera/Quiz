@@ -4,12 +4,14 @@ class ViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!   // Outlet to Next Question UILabel
     @IBOutlet var answerLabel: UILabel!     // Outlet to Show Answer UILabel
     
+    //questions array
     let questions: [String] = [
         "What is 7+7?",
         "What is the capital of Vermont?",
         "What is cognac made from?"
     ]
     
+    //answers array
     let answers: [String] = [
         "14",
         "Montpelier",
