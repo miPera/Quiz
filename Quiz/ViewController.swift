@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         answerLabel.text = answer
     }
     
+    //Animation function for label transition
     func animateLabelTransitions() {
         //Animate the alpha
         UIView.animate(withDuration: 2, animations: {
