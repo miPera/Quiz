@@ -47,6 +47,12 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwC-kt-Szn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSh-qc-yIr">
+                                <rect key="frame" x="166.5" y="64" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -57,12 +63,15 @@
                             <constraint firstItem="Nmx-8O-PGa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="OMC-Tq-TUK"/>
                             <constraint firstItem="fH1-KL-gsV" firstAttribute="top" secondItem="daE-s7-38w" secondAttribute="bottom" constant="88" id="TFb-d4-l9S"/>
                             <constraint firstItem="do1-49-rp2" firstAttribute="top" secondItem="fH1-KL-gsV" secondAttribute="bottom" constant="8" id="cph-1c-sU0"/>
+                            <constraint firstItem="OSh-qc-yIr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hOy-0Y-KpC"/>
                             <constraint firstItem="Nmx-8O-PGa" firstAttribute="centerX" secondItem="daE-s7-38w" secondAttribute="centerX" id="tZX-3O-2BH"/>
+                            <constraint firstItem="OSh-qc-yIr" firstAttribute="top" secondItem="Nmx-8O-PGa" secondAttribute="top" id="zIk-zF-6nS"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="fH1-KL-gsV" id="ihk-gh-02I"/>
-                        <outlet property="questionLabel" destination="Nmx-8O-PGa" id="cd4-fc-dl5"/>
+                        <outlet property="currentQuestionLabel" destination="Nmx-8O-PGa" id="G5H-RJ-17s"/>
+                        <outlet property="nextQuestionLabel" destination="OSh-qc-yIr" id="3aY-e2-90R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
