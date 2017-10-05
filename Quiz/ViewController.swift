@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     var currentQuestionIndex: Int = 0;
     
-    // show initial question on view load
+    // show initial question on view load. Method is called after view loads.
     override func viewDidLoad() {
         super.viewDidLoad()
         currentQuestionLabel.text = questions[currentQuestionIndex]
