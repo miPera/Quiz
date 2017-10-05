@@ -36,12 +36,14 @@ class ViewController: UIViewController {
     
     // Action method to show the next question
     @IBAction func showNextQuestion(_ sender: UIButton) {
-        currentQuestionIndex += 1
+        currentQuestionIndex += 1   // go to next question in array
         
+        // loop back to start of array if index equals array length
         if currentQuestionIndex == questions.count {
             currentQuestionIndex = 0
         }
         
+        // set question text
         let question: String = questions[currentQuestionIndex]
         nextQuestionLabel.text = question
         answerLabel.text = "???"
