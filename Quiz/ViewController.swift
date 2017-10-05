@@ -1,9 +1,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var currentQuestionLabel: UILabel!
-    @IBOutlet var  nextQuestionLabel: UILabel!
-    @IBOutlet var answerLabel: UILabel!         // Outlet to Show Answer UILabel
+    @IBOutlet var currentQuestionLabel: UILabel!    // Outlet for current question label
+    @IBOutlet var nextQuestionLabel: UILabel!       // Outlet for next question label
+    @IBOutlet var answerLabel: UILabel!             // Outlet to Show Answer UILabel
     
     //questions array
     let questions: [String] = [
