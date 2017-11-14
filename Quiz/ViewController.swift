@@ -59,10 +59,21 @@ class ViewController: UIViewController {
     
     //Animation function for label transition
     func animateLabelTransitions() {
-        //Animate the alpha
-        UIView.animate(withDuration: 2, animations: {
-            self.currentQuestionLabel.alpha = 0
-            self.nextQuestionLabel.alpha = 1
-        })
+        
+        //Animate by fading into the next question
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0,
+            options: [],
+            animations: {
+                //update alphas of current and next question as animation
+                self.currentQuestionLabel.alpha = 0
+                self.nextQuestionLabel.alpha = 1
+            },
+            completion: { _ in
+                //swap references of current and next question when animation completes
+                swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
+            }
+        )
     }
 }
